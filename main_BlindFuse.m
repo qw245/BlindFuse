@@ -61,7 +61,7 @@ set(gca,'FontSize',15);
 colorbar;title('Estimated Spatial Blurring');
 
 figure(6);plot(R_est','o-','LineWidth',2); 
- text([1 2-0.05 3-0.05 4-0.2],R_est+0.04,cellstr(num2str(roundn(R_est,-5)')),'FontSize',15);
+ text([1 2-0.05 3-0.05 4-0.2],R_est+0.04,cellstr(num2str(round(R_est,5)')),'FontSize',15);
 xlabel('MS bands','FontSize',15);
 set(gca,'xtick',[1 2 3 4],'FontSize',15);
 set(gca,'XTickLabel',{'NIR-1';'Red-2';'Green-3';'Blue-4'},'FontSize',15)
